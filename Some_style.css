@@ -2,10 +2,14 @@
 .test {    /* we change the styling of <p> tags of 'test' class */
 font-family: Times
   color: red;
-  background-color: #ffff00; /* Hexadecimal color code */
+  /* background-color: #ffff00; /* Hexadecimal color code */
   font-weight: bold;
   margin: 1em;
   font-size: 2em;
+  padding: 10px;
+  background: yellow;
+  border: 2px solid red;
+}
 }
 /* Figure style attributes: */
 .image_1 {
@@ -18,4 +22,11 @@ font-family: Times
   color: yellow;
   background-color: rgb(10,30,70); /* RGB color code */
   margin: 10em;
+  padding: 10px;
+  border: 2px solid red;
+}
+
+/* We want all buttons to have a pointer (i.e. hand) cursor: */
+button{
+    cursor: pointer;
 }
