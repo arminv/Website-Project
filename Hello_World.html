@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
+
+
+<head>
     <meta charset="UTF-8">
     <title>About Me</title>
     <meta charset="utf-8">
@@ -9,25 +10,33 @@
     <!-- This refers to the CSS stylesheet where we keep our styles safely stored! ;) -->
     <link href="Some_style.css" rel="stylesheet">
 
-  </head>
+</head>
 
 
 
-  <body>
+<body>
     <h1>Hello World!</h1>
     <p><strong><u>AGAIN, HELLO!!!</u></strong></p>
-    <span><em><q>HEYA!</q></em></span>
+    <span><em><q>Try this thing please! --></q></em></span>
 
     <!-- Adding a button: -->
-    <button> <strong> PRESS ME! </strong></button>
+    <button><strong> PRESS ME! </strong></button>
+
+    <span><em><q>Sorry, I meant this one below! ;) --></q></em></span>
+    <form>
+        <input type="button" value="I meant this one!" onclick="window.location.href='https://github.com/arminv'" />
+    </form>
 
 
     <!-- Create an unordered list! Make a list of the three web languages: HTML, CSS and JavaScript: -->
-    <ul>
-      <li> HTML </li>
-      <li> CSS </li>
-      <li> JavaScript </li>
-    </ul>
+    <!-- <div> tag lets us divide/separate sections: -->
+    <div>
+        <ol>
+            <li> HTML </li>
+            <li> CSS </li>
+            <li> JavaScript </li>
+        </ol>
+    </div>
 
     <!--  Adding a hyperlink: -->
     <a href="https://www.udacity.com">Udacity</a>
@@ -37,16 +46,48 @@
 
     <!-- Adding a figure with caption that credits the photographer: -->
     <figure class="image_1">
-      <img src="redwoods_state_park.jpg" alt="Stout Memorial Grove in Jedediah Smith Redwoods State Park in 2011">
+        <img src="redwoods_state_park.jpg" alt="Stout Memorial Grove in Jedediah Smith Redwoods State Park in 2011">
 
-      <figcaption>Stout Memorial Grove in Jedediah Smith Redwoods State Park in 2011 by Chmee2 (Own work) GFDL or CC BY-SA 3.0, via Wikimedia Commons -
-        <a href="https://commons.wikimedia.org/wiki/File%3AStout_Memorial_Grove_in_Jedediah_Smith_Redwoods_State_Park_in_2011_(22).JPG">Source</a></figcaption>
+        <figcaption>Stout Memorial Grove in Jedediah Smith Redwoods State Park in 2011 by Chmee2 (Own work) GFDL or CC BY-SA 3.0, via Wikimedia Commons -
+            <a href="https://commons.wikimedia.org/wiki/File%3AStout_Memorial_Grove_in_Jedediah_Smith_Redwoods_State_Park_in_2011_(22).JPG">Source</a></figcaption>
 
     </figure>
 
     <!-- adding a class so that we can selectively set a CSS style for it: -->
-    <p class= "test"> This is a test, just a test, I promise! </p>
-    <p id="test_2"> This is another test, I know...! </p>
+    <p class="test"> This is a test, just a <em>test</em>, I promise! </p>
+    <p id="test_2"> This is another <em>test</em>, I know...! </p>
 
-  </body>
+    <div>
+        <p>Lorem Ipsum is <strong>simply dummy text</strong> of the printing and typesetting industry. <em>Lorem Ipsum</em> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+            passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+        <p>blah blah blah demo demo demo nothing to see here....</p>
+    </div>
+
+    <h4>My Color List</h4>
+    <ol>
+        <li>Red</li>
+        <li>Orange</li>
+        <li>Yellow
+            <ul>
+                <li>Sunflower</li>
+                <li>Banana
+                    <ol>
+                        <li>Frozen Banana</li>
+                        <li>Non-Frozen Banana</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+    <form>
+        <input style="width: 500px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;"
+            type="button" value="Press me to learn how to make me!" onclick="window.location.href='http://www.hyperlinkcode.com/button-links.php'" />
+    </form>
+</body>
+
+
 </html>
+<!-- cmd+Shift+D : duplicate a line as many times as you like! -->
