@@ -5,14 +5,36 @@
     <meta charset="UTF-8">
     <title>About Me</title>
     <meta charset="utf-8">
+    <link href="Some_style.css" rel="stylesheet">
 
-    <!-- Adding a some style (CSS): -->
+
+    <!-- Adding some style (CSS):
     <style>
-      p {           /* we change the color of <p> tags */
+      /* CLASS attribute selector: */
+      .test {    /* we change the styling of <p> tags of 'test' class */
+      font-family: Times
         color: red;
+        background-color: #ffff00; /* Hexadecimal color code */
+        font-weight: bold;
+        margin: 1em;
+        font-size: 2em;
       }
-    </style>
+      /* Figure style attributes: */
+      .image_1 {
+        box-shadow: 3px 3px 5px 6px #ccc;
+        cursor: pointer;
+        border: dashed
+      }
+      /* ID attribute selector: */
+      #test_2 {  /* we change the styling of <p> tag with id: 'test_2' */
+        color: yellow;
+        background-color: rgb(10,30,70); /* RGB color code */
+        margin: 10em;
+      }
+
+    </style> -->
   </head>
+
 
 
 
@@ -39,13 +61,17 @@
     <img src="http://udacity.github.io/fend/images/udacity.png" alt="Udacity logo">
 
     <!-- Adding a figure with caption that credits the photographer: -->
-    <figure>
+    <figure class="image_1">
       <img src="redwoods_state_park.jpg" alt="Stout Memorial Grove in Jedediah Smith Redwoods State Park in 2011">
 
       <figcaption>Stout Memorial Grove in Jedediah Smith Redwoods State Park in 2011 by Chmee2 (Own work) GFDL or CC BY-SA 3.0, via Wikimedia Commons -
         <a href="https://commons.wikimedia.org/wiki/File%3AStout_Memorial_Grove_in_Jedediah_Smith_Redwoods_State_Park_in_2011_(22).JPG">Source</a></figcaption>
 
     </figure>
+
+    <!-- adding a class so that we can selectively set a CSS style for it: -->
+    <p class= "test"> This is a test, just a test, I promise! </p>
+    <p id="test_2"> This is another test, I know...! </p>
 
   </body>
 </html>

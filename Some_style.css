@@ -1,0 +1,21 @@
+/* CLASS attribute selector: */
+.test {    /* we change the styling of <p> tags of 'test' class */
+font-family: Times
+  color: red;
+  background-color: #ffff00; /* Hexadecimal color code */
+  font-weight: bold;
+  margin: 1em;
+  font-size: 2em;
+}
+/* Figure style attributes: */
+.image_1 {
+  box-shadow: 3px 3px 5px 6px #ccc;
+  cursor: pointer;
+  border: dashed
+}
+/* ID attribute selector: */
+#test_2 {  /* we change the styling of <p> tag with id: 'test_2' */
+  color: yellow;
+  background-color: rgb(10,30,70); /* RGB color code */
+  margin: 10em;
+}
