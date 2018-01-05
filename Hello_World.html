@@ -17,6 +17,8 @@
 <body>
     <h1>Hello World!</h1>
     <p><strong><u>AGAIN, HELLO!!!</u></strong></p>
+
+    <!-- <span> is the inline version of <div>: -->
     <span><em><q>Try this thing please! --></q></em></span>
 
     <!-- Adding a button: -->
@@ -29,7 +31,7 @@
 
 
     <!-- Create an unordered list! Make a list of the three web languages: HTML, CSS and JavaScript: -->
-    <!-- <div> tag lets us divide/separate sections: -->
+    <!-- <div> tag lets us divide/separate sections but the difference is visible only when we have some CSS!: -->
     <div>
         <ol>
             <li> HTML </li>
@@ -86,8 +88,44 @@
         <input style="width: 500px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;"
             type="button" value="Press me to learn how to make me!" onclick="window.location.href='http://www.hyperlinkcode.com/button-links.php'" />
     </form>
+
+
+    <h1> First Gen Pokemon Chart </h1>
+
+    <!-- Later we will style this table with CSS so it's best to have both <head>,<body> tags separate now: -->
+    <table border="1">
+        <thead>
+            <tr>
+                <td><strong>Image</strong></td>
+                <td><strong>Name</strong></td>
+                <td><strong>Type</strong></td>
+                <td><strong>Evolves Into</strong></td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><img src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png"></td>
+                <td>  Bulbasaur  </td>
+                <td>  Grass/Poison  </td>
+                <td><a href="http://pokemon.wikia.com/wiki/Ivysaur">Ivysaur</a></td>
+            </tr>
+            <tr>
+                <td><img src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></td>
+                <td>  Charmander  </td>
+                <td>  Fire  </td>
+                <td><a href="http://pokemon.wikia.com/wiki/Charmeleon"> Charmeleon </a></td>
+            </tr>
+            <tr>
+                <td><img src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></td>
+                <td> Squirtle </td>
+                <td>  Water  </td>
+                <td><a href="http://pokemon.wikia.com/wiki/Wartortle"> Wartortle </a></td>
+            </tr>
+        </tbody>
+    </table>
+
+
 </body>
-
-
 </html>
 <!-- cmd+Shift+D : duplicate a line as many times as you like! -->
