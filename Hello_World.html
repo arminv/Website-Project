@@ -24,10 +24,12 @@
     <!-- Adding a button: -->
     <button><strong> PRESS ME! </strong></button>
 
-    <span><em><q>Sorry, I meant this one below! ;) --></q></em></span>
-    <form>
-        <input type="button" value="I meant this one!" onclick="window.location.href='https://github.com/arminv'" />
-    </form>
+    <!-- <br> is a line break: -->
+    <br><span><em><q>Sorry, I meant this one below! ;)</q></em></span>
+        <form>
+            <input type="button" value="I meant this one!" onclick="window.location.href='https://github.com/arminv'" />
+        </form>
+    </br>
 
 
     <!-- Create an unordered list! Make a list of the three web languages: HTML, CSS and JavaScript: -->
@@ -105,19 +107,19 @@
 
         <tbody>
             <tr>
-                <td><img src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png"></td>
+                <td><img width="80" src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png"></td>
                 <td>  Bulbasaur  </td>
                 <td>  Grass/Poison  </td>
                 <td><a href="http://pokemon.wikia.com/wiki/Ivysaur">Ivysaur</a></td>
             </tr>
             <tr>
-                <td><img src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></td>
+                <td><img width="80" src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></td>
                 <td>  Charmander  </td>
                 <td>  Fire  </td>
                 <td><a href="http://pokemon.wikia.com/wiki/Charmeleon"> Charmeleon </a></td>
             </tr>
             <tr>
-                <td><img src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></td>
+                <td><img width="80" src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></td>
                 <td> Squirtle </td>
                 <td>  Water  </td>
                 <td><a href="http://pokemon.wikia.com/wiki/Wartortle"> Wartortle </a></td>
@@ -125,6 +127,72 @@
         </tbody>
     </table>
 
+    <!-- Some Input Practice -->
+    <h1> Some Input Practice:</h1>
+
+    <!-- We would like to take all inut data together so it makes sense to use a <form> tag: -->
+    <!-- action: where the form sends data to -->
+    <!-- method: what HTTP method? (get/post,etc.) GET is default method-->
+    <!-- placeholder gives an idea to the user of what the input is supposed to be! -->
+    <!-- name attribute will be used later. Look at how the query string (url) changes after submitting the form! -->
+
+    <!--
+    <form action="http://wikipedia.org" method="GET">
+        <label>
+            Username:
+            <input name="Username" type="text" placeholder="Username">
+        </label>
+
+        <label>
+            Password:
+            <input name="Password" type="password" placeholder="Password">
+        </label>
+        <input type="submit"> or: <button>Submit</button>
+    </form>
+    -->
+
+
+    <!-- Alternatively, instead of having nested <input>s inside <label>s we can do this: -->
+
+    <form action="http://wikipedia.org" method="GET">
+        <!-- placeholder gives an idea to the user of what the input is supposed to be! -->
+        <!-- name attribute will be used later. Look at how the query string (url) changes after submitting the form! -->
+        <label for="email">Username:</label>
+        <input id="email" name="email" type="email" placeholder="Email" required>
+        <!-- 'required' attribute is used for input validation (boolean attribute) -->
+        <label for "password">Password:</label>
+        <input id="password" name="password" type="password" placeholder="Password" required>
+
+        <input type="submit"> <!-- or: <button>Submit</button> -->
+    </form>
+
+    <br></br>
+
+    <!-- some more input practice: -->
+    <form>
+
+        <p><strong>Which do you prefer?</strong></p>
+
+    	<label for="dogs">Dogs: </label>
+    	<input name="petChoice" id="dogs" type="radio" value="DOGS">
+
+    	<label for="cats">Cats:</label>
+    	<input name="petChoice" id="cats" type="radio" value="CATS">
+
+    	<p><strong>What's your current mood?</strong></p>
+
+    	<select name="mood">
+    		<option value="happy">:)</option>
+    		<option value="neutral">:|</option>
+    		<option value="sad">:(</option>
+    	</select>
+
+    	<input type="text">
+
+    	<textarea rows="10" cols="10"></textarea>
+
+    	<button>Go!</button>
+    </form>
 
 </body>
 </html>
