@@ -43,10 +43,10 @@
     </div>
 
     <!--  Adding a hyperlink: -->
-    <a href="https://www.udacity.com">Udacity</a>
+    <!-- <a href="https://www.udacity.com">Udacity</a> -->
 
     <!-- Adding an image from a URL: -->
-    <img src="http://udacity.github.io/fend/images/udacity.png" alt="Udacity logo">
+    <!-- <img src="http://udacity.github.io/fend/images/udacity.png" alt="Udacity logo"> -->
 
     <!-- Adding a figure with caption that credits the photographer: -->
     <figure class="image_1">
@@ -61,13 +61,6 @@
     <p class="test"> This is a test, just a <em>test</em>, I promise! </p>
     <p id="test_2"> This is another <em>test</em>, I know...! </p>
 
-    <div>
-        <p>Lorem Ipsum is <strong>simply dummy text</strong> of the printing and typesetting industry. <em>Lorem Ipsum</em> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-            passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-        <p>blah blah blah demo demo demo nothing to see here....</p>
-    </div>
 
     <h4>My Color List</h4>
     <ol>
@@ -161,7 +154,8 @@
         <input id="email" name="email" type="email" placeholder="Email" required>
         <!-- 'required' attribute is used for input validation (boolean attribute) -->
         <label for "password">Password:</label>
-        <input id="password" name="password" type="password" placeholder="Password" required>
+        <!-- 'pattern' attribute is more browser-friendly than 'min/maxlength': -->
+        <input id="password" name="password" type="password" placeholder="Password" pattern=".{5,10}" required title="5 to 10 characters">
 
         <input type="submit"> <!-- or: <button>Submit</button> -->
     </form>
@@ -173,6 +167,8 @@
 
         <p><strong>Which do you prefer?</strong></p>
 
+        <!-- here 'name' makes the user choose between the two option (i.e. can only have one at a time!)
+        we also need to use a <value> to differentiate between the user's choice for this decision (and later save it!) : -->
     	<label for="dogs">Dogs: </label>
     	<input name="petChoice" id="dogs" type="radio" value="DOGS">
 
@@ -181,6 +177,8 @@
 
     	<p><strong>What's your current mood?</strong></p>
 
+        <!-- <select> helps us make a dropdown menu: -->
+        <!-- <value> lets us send only a specific choice to url and not everything! -->
     	<select name="mood">
     		<option value="happy">:)</option>
     		<option value="neutral">:|</option>
@@ -189,8 +187,9 @@
 
     	<input type="text">
 
-    	<textarea rows="10" cols="10"></textarea>
+    	<textarea name="paragraph" rows="5" cols="50"></textarea>
 
+        <!-- Note: if <button> is the last thing in the <form>, it submits it! -->
     	<button>Go!</button>
     </form>
 
