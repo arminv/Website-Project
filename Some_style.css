@@ -1,17 +1,40 @@
+h1:nth-of-type(1) {
+    font-size: 70px;
+    font-family: Anton;
+}
+
 body {
     background: url(http://ipconsulting.eu/wp-content/uploads/2015/05/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-size: 17px;
+    /* I chose this font from:Google Font */
+    font-family: Raleway;
+    line-height: 1.75;
+    /* text-align: center; */
 }
 
 div {
     background-color: #94aebc;
     border: 2px dashed #733546;
 }
-/* CLASS attribute selector: */
+
+span {
+    font-size: 2em;
+    font-family: Owsald;
+}
+
+/* We want all buttons to have a pointer (i.e. hand) cursor: */
+button{
+    cursor: pointer;
+    color: red;
+}
+
+
+/* CLASS attribute selectors: */
 .test {    /* we change the styling of <p> tags of 'test' class */
-font-family: Times
-  color: red;
+    font-family: Times
+    color: red;
   /* background-color: #ffff00; /* Hexadecimal color code */
   font-weight: bold;
   margin: 1em;
@@ -26,6 +49,7 @@ font-family: Times
   cursor: pointer;
   border: dashed
 }
+
 /* ID attribute selector: */
 #test_2 {  /* we change the styling of <p> tag with id: 'test_2' */
   color: yellow;
@@ -35,7 +59,38 @@ font-family: Times
   border: 2px dotted red;
 }
 
-/* We want all buttons to have a pointer (i.e. hand) cursor: */
-button{
-    cursor: pointer;
-}
+
+
+
+/* ------------------- */
+/*BONUS CHALLENGES*/
+/*You may need to research some other selectors and properties*/
+
+
+/*Make all "checked" checkboxes have a left margin of 50px(margin-left: 50px)*/
+/* Note: checked is a pseudo-selector like :nth-of-type */
+/* input:checked{
+    margin-left: 50px;
+} */
+
+
+/* Make the <label> elements all UPPERCASE without changing the HTML(definitely look this one up*/
+/* label{
+    text-transform: uppercase;
+} */
+
+/*Make the first letter of the element with id 'special' green and 100px font size(font-size: 100)*/
+/* #special::first-letter{
+    color: green;
+    font-size: 100;
+} */
+
+/*Make the <h1> element's color change to blue when hovered over */
+/* h1:hover {
+    color: blue;
+} */
+
+/*Make the <a> element's that have been visited gray */
+/* a:visited{
+    color: gray;
+} */
