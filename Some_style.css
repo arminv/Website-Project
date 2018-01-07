@@ -30,6 +30,23 @@ button{
     color: red;
 }
 
+#lone_para{
+    /*Content - Width and Height*/
+    width: 50%;
+
+    /*Border*/
+    border: 2px solid blue;
+
+    /*Padding*/
+    padding: 40px;
+
+    /*margin: 100px;*/
+    /*margin-top: 500px;*/
+    /*margin: 20px 40px 500px 100px;*/
+    /*margin: 0 auto 0 auto;*/
+    margin: 0 auto;
+    margin: 50px 50px;
+}
 
 /* CLASS attribute selectors: */
 .test {    /* we change the styling of <p> tags of 'test' class */
