@@ -23,125 +23,126 @@
 
 
 <body>
-<div class="container">
-<div class="jumbotron" style="background-color: rgb(244, 237, 95);">
-    <h1>Hello World!</h1>
-    <br></br>
-    <p><strong><u>AGAIN, HELLO!!!</u></strong></p>
-</div>
+    <div class="container">
+        <div class="jumbotron" style="background-color: rgb(244, 237, 95);">
+            <h1>Hello World!</h1>
+            <br></br>
+            <p><strong><u>AGAIN, HELLO!!!</u></strong></p>
+        </div>
 
-    <!-- <span> is the inline version of <div>: -->
-    <span><em>Try this thing please! --></em></span>
+        <!-- <span> is the inline version of <div>: -->
+        <span><em>Try this thing please! --></em></span>
 
-    <!-- Adding a button: -->
-    <button type="button" class="btn btn-danger btn-sm"><strong> PRESS ME! </strong></button>
-    <br></br>
-    <span><em><q>Sorry, I meant this one! ;) --></q></em></span>
+        <!-- Adding a button: -->
+        <button type="button" class="btn btn-danger btn-sm"><strong> PRESS ME! </strong></button>
+        <br></br>
+        <span><em><q>Sorry, I meant this one! ;) --></q></em></span>
 
-    <button type="button" class="btn btn-success btn-sm"><strong><a href="https://github.com/arminv">PRESS ME!</a></strong></button>
+        <button type="button" class="btn btn-success btn-sm"><strong><a href="https://github.com/arminv">PRESS ME!</a></strong></button>
 
-    <!-- Create an unordered list! Make a list of the three web languages: HTML, CSS and JavaScript: -->
-    <!-- <div> tag lets us divide/separate sections but the difference is visible only when we have some CSS!: -->
-    <div>
+
+        <!-- Create an unordered list! Make a list of the three web languages: HTML, CSS and JavaScript: -->
+        <!-- <div> tag lets us divide/separate sections but the difference is visible only when we have some CSS!: -->
+        <div>
+            <ol>
+                <li> HTML </li>
+                <li> CSS </li>
+                <li> JavaScript </li>
+            </ol>
+        </div>
+
+        <!--  Adding a hyperlink: -->
+        <!-- <a href="https://www.udacity.com">Udacity</a> -->
+
+        <!-- Adding an image from a URL: -->
+        <!-- <img src="http://udacity.github.io/fend/images/udacity.png" alt="Udacity logo"> -->
+
+        <!-- Adding a figure with caption that credits the photographer: -->
+        <figure class="image_1">
+            <img src="redwoods_state_park.jpg" alt="Stout Memorial Grove in Jedediah Smith Redwoods State Park in 2011">
+
+            <figcaption>Stout Memorial Grove in Jedediah Smith Redwoods State Park in 2011 by Chmee2 (Own work) GFDL or CC BY-SA 3.0, via Wikimedia Commons -
+                <a href="https://commons.wikimedia.org/wiki/File%3AStout_Memorial_Grove_in_Jedediah_Smith_Redwoods_State_Park_in_2011_(22).JPG">Source</a></figcaption>
+
+        </figure>
+
+        <hr>
+
+        <!-- adding a class so that we can selectively set a CSS style for it: -->
+        <p class="test"> This is a <span>test</span>, just a <em>test</em>, I promise! </p>
+        <p id="test_2"> This is another <span><em>test</em></span>, I know...! </p>
+
+
+        <h2 style="border-top: 3px solid red;">My Color List</h2>
         <ol>
-            <li> HTML </li>
-            <li> CSS </li>
-            <li> JavaScript </li>
+            <li>Red</li>
+            <li>Orange</li>
+            <li>Yellow
+                <ul>
+                    <li>Sunflower</li>
+                    <li>Banana
+                        <ol>
+                            <li>Frozen Banana</li>
+                            <li>Non-Frozen Banana</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
         </ol>
-    </div>
 
-    <!--  Adding a hyperlink: -->
-    <!-- <a href="https://www.udacity.com">Udacity</a> -->
+        <hr>
 
-    <!-- Adding an image from a URL: -->
-    <!-- <img src="http://udacity.github.io/fend/images/udacity.png" alt="Udacity logo"> -->
-
-    <!-- Adding a figure with caption that credits the photographer: -->
-    <figure class="image_1">
-        <img src="redwoods_state_park.jpg" alt="Stout Memorial Grove in Jedediah Smith Redwoods State Park in 2011">
-
-        <figcaption>Stout Memorial Grove in Jedediah Smith Redwoods State Park in 2011 by Chmee2 (Own work) GFDL or CC BY-SA 3.0, via Wikimedia Commons -
-            <a href="https://commons.wikimedia.org/wiki/File%3AStout_Memorial_Grove_in_Jedediah_Smith_Redwoods_State_Park_in_2011_(22).JPG">Source</a></figcaption>
-
-    </figure>
-
-    <hr>
-
-    <!-- adding a class so that we can selectively set a CSS style for it: -->
-    <p class="test"> This is a <span>test</span>, just a <em>test</em>, I promise! </p>
-    <p id="test_2"> This is another <span><em>test</em></span>, I know...! </p>
+        <form>
+            <input style="width: 500px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;"
+                type="button" value="Press me to learn how to make me!" onclick="window.location.href='http://www.hyperlinkcode.com/button-links.php'" />
+        </form>
 
 
-    <h2 style="border-top: 3px solid red;">My Color List</h2>
-    <ol>
-        <li>Red</li>
-        <li>Orange</li>
-        <li>Yellow
-            <ul>
-                <li>Sunflower</li>
-                <li>Banana
-                    <ol>
-                        <li>Frozen Banana</li>
-                        <li>Non-Frozen Banana</li>
-                    </ol>
-                </li>
-            </ul>
-        </li>
-    </ol>
+        <h2 style="border-top: 3px solid red;"> First Gen Pokemon Chart </h2>
 
-    <hr>
+        <!-- Later we will style this table with CSS so it's best to have both <head>,<body> tags separate now: -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <td><strong>Image</strong></td>
+                    <td><strong>Name</strong></td>
+                    <td><strong>Type</strong></td>
+                    <td><strong>Evolves Into</strong></td>
+                </tr>
+            </thead>
 
-    <form>
-        <input style="width: 500px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;"
-            type="button" value="Press me to learn how to make me!" onclick="window.location.href='http://www.hyperlinkcode.com/button-links.php'" />
-    </form>
+            <tbody>
+                <tr>
+                    <td><img width="80" src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png"></td>
+                    <td> Bulbasaur </td>
+                    <td> Grass/Poison </td>
+                    <td><a href="http://pokemon.wikia.com/wiki/Ivysaur">Ivysaur</a></td>
+                </tr>
+                <tr>
+                    <td><img width="80" src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></td>
+                    <td> Charmander </td>
+                    <td> Fire </td>
+                    <td><a href="http://pokemon.wikia.com/wiki/Charmeleon"> Charmeleon </a></td>
+                </tr>
+                <tr>
+                    <td><img width="80" src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></td>
+                    <td> Squirtle </td>
+                    <td> Water </td>
+                    <td><a href="http://pokemon.wikia.com/wiki/Wartortle"> Wartortle </a></td>
+                </tr>
+            </tbody>
+        </table>
 
+        <!-- Some Input Practice -->
+        <h2 style="border-top: 3px solid red;"> Some Input Practice:</h2>
 
-    <h2 style="border-top: 3px solid red;"> First Gen Pokemon Chart </h2>
+        <!-- We would like to take all inut data together so it makes sense to use a <form> tag: -->
+        <!-- action: where the form sends data to -->
+        <!-- method: what HTTP method? (get/post,etc.) GET is default method-->
+        <!-- placeholder gives an idea to the user of what the input is supposed to be! -->
+        <!-- name attribute will be used later. Look at how the query string (url) changes after submitting the form! -->
 
-    <!-- Later we will style this table with CSS so it's best to have both <head>,<body> tags separate now: -->
-    <table border="1">
-        <thead>
-            <tr>
-                <td><strong>Image</strong></td>
-                <td><strong>Name</strong></td>
-                <td><strong>Type</strong></td>
-                <td><strong>Evolves Into</strong></td>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td><img width="80" src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png"></td>
-                <td> Bulbasaur </td>
-                <td> Grass/Poison </td>
-                <td><a href="http://pokemon.wikia.com/wiki/Ivysaur">Ivysaur</a></td>
-            </tr>
-            <tr>
-                <td><img width="80" src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></td>
-                <td> Charmander </td>
-                <td> Fire </td>
-                <td><a href="http://pokemon.wikia.com/wiki/Charmeleon"> Charmeleon </a></td>
-            </tr>
-            <tr>
-                <td><img width="80" src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></td>
-                <td> Squirtle </td>
-                <td> Water </td>
-                <td><a href="http://pokemon.wikia.com/wiki/Wartortle"> Wartortle </a></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- Some Input Practice -->
-    <h2 style="border-top: 3px solid red;"> Some Input Practice:</h2>
-
-    <!-- We would like to take all inut data together so it makes sense to use a <form> tag: -->
-    <!-- action: where the form sends data to -->
-    <!-- method: what HTTP method? (get/post,etc.) GET is default method-->
-    <!-- placeholder gives an idea to the user of what the input is supposed to be! -->
-    <!-- name attribute will be used later. Look at how the query string (url) changes after submitting the form! -->
-
-    <!--
+        <!--
     <form action="http://wikipedia.org" method="GET">
         <label>
             Username:
@@ -157,60 +158,141 @@
     -->
 
 
-    <!-- Alternatively, instead of having nested <input>s inside <label>s we can do this: -->
+        <!-- Alternatively, instead of having nested <input>s inside <label>s we can do this: -->
 
-    <form action="http://wikipedia.org" method="GET">
-        <!-- placeholder gives an idea to the user of what the input is supposed to be! -->
-        <!-- name attribute will be used later. Look at how the query string (url) changes after submitting the form! -->
-        <label for="email">Username:</label>
-        <input id="email" name="email" type="email" placeholder="Email" required>
-        <!-- 'required' attribute is used for input validation (boolean attribute) -->
-        <label for "password">Password:</label>
-        <!-- 'pattern' attribute is more browser-friendly than 'min/maxlength': -->
-        <input id="password" name="password" type="password" placeholder="Password" pattern=".{5,10}" required title="5 to 10 characters">
+        <form action="http://wikipedia.org" method="GET">
+            <!-- placeholder gives an idea to the user of what the input is supposed to be! -->
+            <!-- name attribute will be used later. Look at how the query string (url) changes after submitting the form! -->
+            <label for="email">Username:</label>
+            <input id="email" name="email" type="email" placeholder="Email" required>
+            <!-- 'required' attribute is used for input validation (boolean attribute) -->
+            <label for "password">Password:</label>
+            <!-- 'pattern' attribute is more browser-friendly than 'min/maxlength': -->
+            <input id="password" name="password" type="password" placeholder="Password" pattern=".{5,10}" required title="5 to 10 characters">
 
-        <input type="submit">
-        <!-- or: <button>Submit</button> -->
-    </form>
-
-    <hr>
-
-    <!-- some more input practice: -->
-    <form>
-
-        <p><strong>Which do you prefer?</strong></p>
-
-        <!-- here 'name' makes the user choose between the two option (i.e. can only have one at a time!)
-        we also need to use a <value> to differentiate between the user's choice for this decision (and later save it!) : -->
-        <label for="dogs">Dogs: </label>
-        <input name="petChoice" id="dogs" type="radio" value="DOGS" checked>
-
-        <label for="cats">Cats:</label>
-        <input name="petChoice" id="cats" type="radio" value="CATS">
+            <input type="submit">
+            <!-- or: <button>Submit</button> -->
+        </form>
 
         <hr>
 
-        <p><strong>What's your current mood?</strong></p>
+        <!-- some more input practice: -->
+        <form>
 
-        <!-- <select> helps us make a dropdown menu: -->
-        <!-- <value> lets us send only a specific choice to url and not everything! -->
-        <select name="mood">
+            <p><strong>Which do you prefer?</strong></p>
+
+            <!-- here 'name' makes the user choose between the two option (i.e. can only have one at a time!)
+        we also need to use a <value> to differentiate between the user's choice for this decision (and later save it!) : -->
+            <label for="dogs">Dogs: </label>
+            <input name="petChoice" id="dogs" type="radio" value="DOGS" checked>
+
+            <label for="cats">Cats:</label>
+            <input name="petChoice" id="cats" type="radio" value="CATS">
+
+            <hr>
+
+            <p><strong>What's your current mood?</strong></p>
+
+            <!-- <select> helps us make a dropdown menu: -->
+            <!-- <value> lets us send only a specific choice to url and not everything! -->
+            <select name="mood">
     		<option value="happy">:)</option>
     		<option value="neutral">:|</option>
     		<option value="sad">:(</option>
     	</select>
 
-        <input type="text" placeholder="Text here">
-        <br></br>
-        <textarea name="paragraph" rows="5" cols="50" placeholder="Add text here."></textarea>
+            <input type="text" placeholder="Text here">
+            <br></br>
+            <textarea name="paragraph" rows="5" cols="50" placeholder="Add text here."></textarea>
 
-        <!-- Note: if <button> is the last thing in the <form>, it submits it! -->
-        <button>Go!</button>
-    </form>
+            <!-- Note: if <button> is the last thing in the <form>, it submits it! -->
+            <button>Go!</button>
+        </form>
 
-    <p id="lone_para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
+
+        <!-- See here for this Bootstrap form: https://v4-alpha.getbootstrap.com/components/forms/ -->
+        <div class="form-group row">
+            <label for="example-text-input" class="col-2 col-form-label">Text</label>
+            <div class="col-10">
+                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-search-input" class="col-2 col-form-label">Search</label>
+            <div class="col-10">
+                <input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-email-input" class="col-2 col-form-label">Email</label>
+            <div class="col-10">
+                <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-url-input" class="col-2 col-form-label">URL</label>
+            <div class="col-10">
+                <input class="form-control" type="url" value="https://getbootstrap.com" id="example-url-input">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+            <div class="col-10">
+                <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-password-input" class="col-2 col-form-label">Password</label>
+            <div class="col-10">
+                <input class="form-control" type="password" value="hunter2" id="example-password-input">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-number-input" class="col-2 col-form-label">Number</label>
+            <div class="col-10">
+                <input class="form-control" type="number" value="42" id="example-number-input">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-datetime-local-input" class="col-2 col-form-label">Date and time</label>
+            <div class="col-10">
+                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-date-input" class="col-2 col-form-label">Date</label>
+            <div class="col-10">
+                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-month-input" class="col-2 col-form-label">Month</label>
+            <div class="col-10">
+                <input class="form-control" type="month" value="2011-08" id="example-month-input">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-week-input" class="col-2 col-form-label">Week</label>
+            <div class="col-10">
+                <input class="form-control" type="week" value="2011-W33" id="example-week-input">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-time-input" class="col-2 col-form-label">Time</label>
+            <div class="col-10">
+                <input class="form-control" type="time" value="13:45:00" id="example-time-input">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-color-input" class="col-2 col-form-label">Color</label>
+            <div class="col-10">
+                <input class="form-control" type="color" value="#563d7c" id="example-color-input">
+            </div>
+        </div>
+
+        <p id="lone_para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
 </body>
 
 </html>
