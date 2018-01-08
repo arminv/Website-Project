@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>About Me</title>
+    <title>My First Website!</title>
     <meta charset="utf-8">
 
     <!-- This refers to the CSS stylesheet where we keep our styles safely stored! ;) -->
@@ -12,29 +12,33 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+
+    <!-- Importing Bootstrap(v 3.3.7) - two alternative ways: -->
+    <!-- <link href="Bootstrap.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 </head>
 
 
 
 <body>
-    <h1 style="border: 3px solid blue; margin: auto">Hello World!</h1>
+<div class="container">
+<div class="jumbotron" style="background-color: rgb(244, 237, 95);">
+    <h1>Hello World!</h1>
     <br></br>
     <p><strong><u>AGAIN, HELLO!!!</u></strong></p>
+</div>
 
     <!-- <span> is the inline version of <div>: -->
-    <span><em><q>Try this thing please! --></q></em></span>
+    <span><em>Try this thing please! --></em></span>
 
     <!-- Adding a button: -->
-    <button><strong> PRESS ME! </strong></button>
+    <button type="button" class="btn btn-danger btn-sm"><strong> PRESS ME! </strong></button>
+    <br></br>
+    <span><em><q>Sorry, I meant this one! ;) --></q></em></span>
 
-    <!-- <br> is a line break: -->
-    <br><span><em><q>Sorry, I meant this one below! ;)</q></em></span>
-        <form>
-            <input type="button" value="I meant this one!" onclick="window.location.href='https://github.com/arminv'" />
-        </form>
-    </br>
-
+    <button type="button" class="btn btn-success btn-sm"><strong><a href="https://github.com/arminv">PRESS ME!</a></strong></button>
 
     <!-- Create an unordered list! Make a list of the three web languages: HTML, CSS and JavaScript: -->
     <!-- <div> tag lets us divide/separate sections but the difference is visible only when we have some CSS!: -->
@@ -61,12 +65,14 @@
 
     </figure>
 
+    <hr>
+
     <!-- adding a class so that we can selectively set a CSS style for it: -->
     <p class="test"> This is a <span>test</span>, just a <em>test</em>, I promise! </p>
     <p id="test_2"> This is another <span><em>test</em></span>, I know...! </p>
 
 
-    <h1 style="border-top: 3px solid red;">My Color List</h1>
+    <h2 style="border-top: 3px solid red;">My Color List</h2>
     <ol>
         <li>Red</li>
         <li>Orange</li>
@@ -83,13 +89,15 @@
         </li>
     </ol>
 
+    <hr>
+
     <form>
         <input style="width: 500px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;"
             type="button" value="Press me to learn how to make me!" onclick="window.location.href='http://www.hyperlinkcode.com/button-links.php'" />
     </form>
 
 
-    <h1 style="border-top: 3px solid red;"> First Gen Pokemon Chart </h1>
+    <h2 style="border-top: 3px solid red;"> First Gen Pokemon Chart </h2>
 
     <!-- Later we will style this table with CSS so it's best to have both <head>,<body> tags separate now: -->
     <table border="1">
@@ -105,27 +113,27 @@
         <tbody>
             <tr>
                 <td><img width="80" src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png"></td>
-                <td>  Bulbasaur  </td>
-                <td>  Grass/Poison  </td>
+                <td> Bulbasaur </td>
+                <td> Grass/Poison </td>
                 <td><a href="http://pokemon.wikia.com/wiki/Ivysaur">Ivysaur</a></td>
             </tr>
             <tr>
                 <td><img width="80" src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></td>
-                <td>  Charmander  </td>
-                <td>  Fire  </td>
+                <td> Charmander </td>
+                <td> Fire </td>
                 <td><a href="http://pokemon.wikia.com/wiki/Charmeleon"> Charmeleon </a></td>
             </tr>
             <tr>
                 <td><img width="80" src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></td>
                 <td> Squirtle </td>
-                <td>  Water  </td>
+                <td> Water </td>
                 <td><a href="http://pokemon.wikia.com/wiki/Wartortle"> Wartortle </a></td>
             </tr>
         </tbody>
     </table>
 
     <!-- Some Input Practice -->
-    <h1 style="border-top: 3px solid red;"> Some Input Practice:</h1>
+    <h2 style="border-top: 3px solid red;"> Some Input Practice:</h2>
 
     <!-- We would like to take all inut data together so it makes sense to use a <form> tag: -->
     <!-- action: where the form sends data to -->
@@ -161,10 +169,11 @@
         <!-- 'pattern' attribute is more browser-friendly than 'min/maxlength': -->
         <input id="password" name="password" type="password" placeholder="Password" pattern=".{5,10}" required title="5 to 10 characters">
 
-        <input type="submit"> <!-- or: <button>Submit</button> -->
+        <input type="submit">
+        <!-- or: <button>Submit</button> -->
     </form>
 
-    <br></br>
+    <hr>
 
     <!-- some more input practice: -->
     <form>
@@ -173,31 +182,36 @@
 
         <!-- here 'name' makes the user choose between the two option (i.e. can only have one at a time!)
         we also need to use a <value> to differentiate between the user's choice for this decision (and later save it!) : -->
-    	<label for="dogs">Dogs: </label>
-    	<input name="petChoice" id="dogs" type="radio" value="DOGS">
+        <label for="dogs">Dogs: </label>
+        <input name="petChoice" id="dogs" type="radio" value="DOGS" checked>
 
-    	<label for="cats">Cats:</label>
-    	<input name="petChoice" id="cats" type="radio" value="CATS">
+        <label for="cats">Cats:</label>
+        <input name="petChoice" id="cats" type="radio" value="CATS">
 
-    	<p><strong>What's your current mood?</strong></p>
+        <hr>
+
+        <p><strong>What's your current mood?</strong></p>
 
         <!-- <select> helps us make a dropdown menu: -->
         <!-- <value> lets us send only a specific choice to url and not everything! -->
-    	<select name="mood">
+        <select name="mood">
     		<option value="happy">:)</option>
     		<option value="neutral">:|</option>
     		<option value="sad">:(</option>
     	</select>
 
-    	<input type="text" placeholder="Text here">
-
-    	<textarea name="paragraph" rows="5" cols="50" placeholder="Add text here."></textarea>
+        <input type="text" placeholder="Text here">
+        <br></br>
+        <textarea name="paragraph" rows="5" cols="50" placeholder="Add text here."></textarea>
 
         <!-- Note: if <button> is the last thing in the <form>, it submits it! -->
-    	<button>Go!</button>
+        <button>Go!</button>
     </form>
 
-    <p id="lone_para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p id="lone_para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
 </body>
+
 </html>
 <!-- cmd+Shift+D : duplicate a line as many times as you like! -->

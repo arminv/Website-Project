@@ -1,22 +1,28 @@
 h1:nth-of-type(1) {
     font-size: 70px;
-    font-family: Anton;
+    font-family: Ranga;
+    border: 2px solid red;
+    margin: auto
+    background: rgb(229, 246, 255);
+    border-radius: 50%;
 }
 
 body {
-  width: 80%;
-  border: 5px solid rgb(66, 122, 200);
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 20px;
+  border: 30px solid rgb(66, 122, 220);
+  padding: 40px;
   margin: 20px auto;
-  max-width: 900px;
+  /* Note these two: */
+  /* width: 80%;
+  max-width: 900px; */
+  /*  */
   background: url(http://ipconsulting.eu/wp-content/uploads/2015/05/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  font-size: 17px;
-  font-family: Raleway;
-  line-height: 1.75;
+  font-size: 18px;
+  font-family: Raleway, 'Source Sans Pro', sans-serif;
+  line-height: 1.65;
   text-align: center;
+  letter-spacing: 1.5px;
 }
 
 ul{
@@ -29,14 +35,14 @@ ol{
     margin: auto;
 }
 
-div {
-    background-color: #94aebc;
+/* div {
+    background-color: rgb(70, 166, 219);
     border: 2px dashed #733546;
     text-align: center;
-}
+} */
 
 span {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: Owsald;
 }
 
@@ -47,8 +53,17 @@ button{
 }
 
 table {
-    /* margin-left: auto; */
     margin: auto;
+}
+
+img{
+    border-radius: 3%;
+}
+
+hr {
+    border: 0;
+    height: 1.5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 }
 
 #lone_para{
@@ -91,7 +106,7 @@ table {
 /* ID attribute selector: */
 #test_2 {  /* we change the styling of <p> tag with id: 'test_2' */
   color: yellow;
-  background-color: rgb(10,30,70); /* RGB color code */
+  background-color: rgb(70, 166, 219); /* RGB color code */
   margin: 2em;
   padding: 10px;
   border: 2px dotted red;
