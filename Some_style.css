@@ -4,29 +4,37 @@ h1:nth-of-type(1) {
 }
 
 body {
-    background: url(http://ipconsulting.eu/wp-content/uploads/2015/05/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 17px;
-    /* I chose this font from:Google Font */
-    font-family: Raleway;
-    line-height: 1.75;
-    /* text-align: center; */
-    text-align: center;
+  width: 80%;
+  border: 5px solid rgb(66, 122, 200);
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  background: url(http://ipconsulting.eu/wp-content/uploads/2015/05/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 17px;
+  font-family: Raleway;
+  line-height: 1.75;
+  text-align: center;
 }
+
 ul{
     text-align: left;
     margin: auto;
 }
+
 ol{
     text-align: left;
     margin: auto;
 }
+
 div {
     background-color: #94aebc;
     border: 2px dashed #733546;
     text-align: center;
 }
+
 span {
     font-size: 2em;
     font-family: Owsald;
@@ -37,10 +45,12 @@ button{
     cursor: pointer;
     color: red;
 }
+
 table {
     /* margin-left: auto; */
     margin: auto;
 }
+
 #lone_para{
     /*Content - Width and Height*/
     width: 50%;
