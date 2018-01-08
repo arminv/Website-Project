@@ -12,13 +12,21 @@ body {
     font-family: Raleway;
     line-height: 1.75;
     /* text-align: center; */
+    text-align: center;
 }
-
+ul{
+    text-align: left;
+    margin: auto;
+}
+ol{
+    text-align: left;
+    margin: auto;
+}
 div {
     background-color: #94aebc;
     border: 2px dashed #733546;
+    text-align: center;
 }
-
 span {
     font-size: 2em;
     font-family: Owsald;
@@ -29,7 +37,10 @@ button{
     cursor: pointer;
     color: red;
 }
-
+table {
+    /* margin-left: auto; */
+    margin: auto;
+}
 #lone_para{
     /*Content - Width and Height*/
     width: 50%;
@@ -45,7 +56,7 @@ button{
     /*margin: 20px 40px 500px 100px;*/
     /*margin: 0 auto 0 auto;*/
     margin: 0 auto;
-    margin: 50px 50px;
+    margin: 50px auto;
 }
 
 /* CLASS attribute selectors: */
@@ -75,8 +86,6 @@ button{
   padding: 10px;
   border: 2px dotted red;
 }
-
-
 
 
 /* ------------------- */
