@@ -1,20 +1,21 @@
 h1:nth-of-type(1) {
-    font-size: 70px;
+    font-size: 50px;
     font-family: Ranga;
-    border: 2px solid red;
+    border: 3px solid #dbff919c;
     margin: auto
     background: rgb(229, 246, 255);
-    border-radius: 50%;
+    border-radius: 90%;
 }
 
 h2{
     padding: 20px;
+    border-top: 3px solid black;"
 }
 
 body {
-  border: 30px solid rgb(66, 122, 220);
+  border: 30px solid #3f4a5fc2;
   padding: 40px;
-  margin: 20px auto;
+  margin: 10px auto;
   /* Note these two: */
   /* width: 80%;
   max-width: 900px; */
@@ -86,14 +87,14 @@ hr {
     border: 2px solid blue;
 
     /*Padding*/
-    padding: 40px;
+    padding: 30px;
 
     /*margin: 100px;*/
     /*margin-top: 500px;*/
     /*margin: 20px 40px 500px 100px;*/
     /*margin: 0 auto 0 auto;*/
-    margin: 0 auto;
-    margin: 50px auto;
+    margin: auto;
+    /* margin: auto auto; */
 }
 
 /* CLASS attribute selectors: */
@@ -116,14 +117,13 @@ hr {
 }
 
 /* ID attribute selector: */
-#test_2 {  /* we change the styling of <p> tag with id: 'test_2' */
+/* we change the styling of <p> tag with id: 'test_2' */
+/* #test_2{
   color: yellow;
-  background-color: rgb(70, 166, 219); /* RGB color code */
+  background-color: rgb(70, 166, 219);
   margin: 2em;
   padding: 10px;
-  border: 2px dotted red;
-}
-
+  border: 2px dotted red;} */
 
 /* ------------------- */
 /*BONUS CHALLENGES*/
