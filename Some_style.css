@@ -9,7 +9,7 @@ h1:nth-of-type(1) {
 
 h2{
     padding: 20px;
-    border-top: 3px solid black;"
+    /* border-top: 3px solid black;" */
 }
 
 body {
@@ -69,9 +69,10 @@ img{
 
 /* Bootsrtrap-compatible <hr>: */
 hr {
-    border-top: 1.5px solid #000000 !important;
-    margin-bottom:5px !important;
-    margin-top:5px !important;
+    border-top: 1.3px solid red !important;
+    margin-bottom:20px !important;
+    margin-top:20px !important;
+    max-width: 99%;
    }
 /* base CSS <hr>: */
 /* hr {
