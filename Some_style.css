@@ -59,6 +59,8 @@ button{
 
 table {
     margin: auto;
+    border-color: yellow;
+    color: blue;
 }
 
 img{
